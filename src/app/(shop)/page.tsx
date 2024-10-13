@@ -1,9 +1,14 @@
 /* import { mainFont } from "../config/fonts"; */
 
+import { ProductGrid, Title } from "@/components";
+import { initialData } from "@/seed/seed";
+const products = initialData.products;
+
 export default function Home() {
   return (
-    <div>
-      <h1>Shop Page</h1>
-    </div>
+    <>
+      <Title title="Tienda" subtitle="Todos los productos"   />
+      <ProductGrid products={products} />
+    </>
   );
 }

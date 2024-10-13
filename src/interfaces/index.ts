@@ -1,0 +1,1 @@
+export type {ValidSizes, ValidTypes, Product} from "./product.interface"
